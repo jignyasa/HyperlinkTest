@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3BACC8"
+    tools:context=".activity.LoginActivity">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvwelcome"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="@string/welcome_back_to"
+        android:textColor="@color/colorWhite"
+        android:textSize="28sp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintStart_toStartOf="@id/edtEmail"
+        app:layout_constraintBottom_toTopOf="@id/tvContinue"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvContinue"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorWhite"
+        android:layout_marginBottom="72dp"
+        android:textSize="16dp"
+        android:text="@string/login_to_continue"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintStart_toStartOf="@id/edtEmail"
+        app:layout_constraintBottom_toTopOf="@id/edtEmail"/>
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edtEmail"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:hint="@string/email"
+        android:inputType="textEmailAddress"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:paddingStart="20dp"
+        android:gravity="center_vertical"
+        android:background="@drawable/bg_edittext"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/edtPassWord"
+        android:paddingLeft="20dp" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edtPassWord"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:hint="@string/password"
+        android:layout_marginBottom="24dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:paddingStart="20dp"
+        android:gravity="center_vertical"
+        android:inputType="textPassword"
+        android:background="@drawable/bg_edittext"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btnLogin"
+        android:paddingLeft="20dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnLogin"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="@string/login"
+        android:textColor="@color/colorWhite"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/bg_buton"
+        app:layout_constraintStart_toStartOf="@id/edtPassWord"
+        app:layout_constraintBottom_toTopOf="@+id/labelCreateAccount"
+        />
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/labelCreateAccount"
+        android:layout_width="0dp"
+        android:layout_height="50dp"
+        android:text="@string/create_new_account"
+        android:gravity="center"
+        android:textSize="20sp"
+        android:textColor="@color/colorPink"
+        android:background="@color/colorWhite"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+</androidx.constraintlayout.widget.ConstraintLayout>

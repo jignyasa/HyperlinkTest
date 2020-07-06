@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.Otpactivity">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivClose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="16dp"
+        android:src="@drawable/ic_close"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/ivPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginLeft="32dp"
+        android:layout_marginTop="200dp"
+        android:src="@drawable/ic_iphone"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/labelPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/phone"
+        android:textSize="20sp"
+        app:layout_constraintStart_toStartOf="@+id/ivPhone"
+        app:layout_constraintTop_toBottomOf="@id/ivPhone" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/labelVerificetion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Verification"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="@+id/ivPhone"
+        app:layout_constraintTop_toBottomOf="@id/labelPhone" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/labelOtp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Otp has been send to your mobile number"
+        app:layout_constraintStart_toStartOf="@+id/ivPhone"
+        app:layout_constraintTop_toBottomOf="@id/labelVerificetion" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edtOpt1"
+        style="@style/edtPinStyle"
+        app:layout_constraintEnd_toStartOf="@+id/edtOpt2"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/labelOtp" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edtOpt2"
+        style="@style/edtPinStyle"
+        android:layout_marginStart="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/edtOpt3"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/edtOpt1"
+        app:layout_constraintTop_toBottomOf="@id/labelOtp"
+        android:layout_marginLeft="8dp" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edtOpt3"
+        style="@style/edtPinStyle"
+        android:layout_marginStart="8dp"
+        app:layout_constraintEnd_toStartOf="@+id/edtOpt4"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/edtOpt2"
+        app:layout_constraintTop_toBottomOf="@id/labelOtp"
+        android:layout_marginLeft="8dp" />
+
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/edtOpt4"
+        style="@style/edtPinStyle"
+        android:layout_marginStart="8dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/edtOpt3"
+        app:layout_constraintTop_toBottomOf="@id/labelOtp"
+        android:layout_marginLeft="8dp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnVerify"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:text="@string/verify"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/bg_button_blue"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/edtOpt1"/>
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/labelResend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/don_t_receive_the_otp"
+        android:layout_marginTop="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnVerify" />
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/tvResend"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/resend"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/colorRed"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/labelResend" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

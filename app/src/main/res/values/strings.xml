@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">HyperlinkTest</string>
+    <string name="create_new_account">Create New Account</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="login">Login</string>
+    <string name="name">Name</string>
+    <string name="phone">Phone</string>
+    <string name="address">Address</string>
+    <string name="i_agree_to_tearms_and_condition">I agree to tearms and condition</string>
+    <string name="create_new">Create New</string>
+    <string name="account">Account</string>
+    <string name="signup_to_continue">SignUp to Continue</string>
+    <string name="create_account">Create Account</string>
+    <string name="welcome_back_to">Welcome Back To</string>
+    <string name="login_to_continue">Login to continue</string>
+    <string name="verify">Verify</string>
+    <string name="don_t_receive_the_otp">Don\'t receive the otp</string>
+    <string name="resend">Resend</string>
+</resources>
